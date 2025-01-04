@@ -27,7 +27,12 @@ pipeline {
 
     stage('Docker Image Push') {
       steps {
-        sh 'docker push adamzhanovt/myfirstrepo:latest'
+        sh '''docker.withRegistry(\'https://registry.hub.docker.com\', \'docker_hub_creds_id\')  
+
+{ 
+app.push("${env.adamzhanovt/myfirstrepo}") 
+app.push("latest") 
+}'''
       }
     }
 
