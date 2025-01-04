@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
-        git 'https://github.com/adamzhanovt/cicd-pipeline'
+        git(url: 'https://github.com/adamzhanovt/cicd-pipeline', branch: 'main')
       }
     }
 
