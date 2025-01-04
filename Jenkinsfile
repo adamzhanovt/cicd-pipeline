@@ -25,5 +25,11 @@ pipeline {
       }
     }
 
+    stage('') {
+      steps {
+        sh 'docker push adamzhanovt/myfirstrepo:latest'
+      }
+    }
+
   }
 }
