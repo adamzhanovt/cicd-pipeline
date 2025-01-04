@@ -25,7 +25,7 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('Docker Image Push') {
       steps {
         sh 'docker push adamzhanovt/myfirstrepo:latest'
       }
