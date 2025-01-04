@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('Git Checkout') {
       steps {
         git(url: 'https://github.com/adamzhanovt/cicd-pipeline', branch: 'main')
       }
