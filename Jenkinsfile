@@ -27,7 +27,8 @@ pipeline {
 
     stage('Docker Image Push') {
       steps {
-        sh 'docker push adamzhanovt/myfirstrepo:latest'
+        sh '''docker login -u "adamzhanov" -p "Evhf2013!"
+docker push adamzhanovt/myfirstrepo:latest'''
       }
     }
 
